@@ -1,0 +1,3 @@
+#export(check.params, find.cor.mat.star, genPBONN, lower.upper.cors, validate.cor.mat)
+exportPattern("^[^\\.]")
+import(corpcor, BB, MASS, GenOrd, Matrix)
