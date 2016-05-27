@@ -58,9 +58,8 @@ After transformation and checking of parameters, a n by (no.pois+no.bin+no.ord+n
 Then for each variable, the appropriate transformation is applied to each column of the data generated.
 }
 \references{
-Amatya, A. & Demirtas, H. (2016) Simultaneous generation of multivariate mixed
-data with Poisson and normal marginals. Forthcoming in \emph{Journal of Statistical
-Computation and Simulation}.
+Amatya, A. & Demirtas, H. (2015) Simultaneous generation of multivariate mixed
+data with Poisson and normal marginals. \emph{Journal of Statistical Computation and Simulation} \bold{85:15}, 3129--3139.
 
 Demirtas, H. & Hedeker, D. (2011) A practical way for computing approximate
 lower and upper correlation bounds. \emph{American Statistician} \bold{65:2}, 104--109.

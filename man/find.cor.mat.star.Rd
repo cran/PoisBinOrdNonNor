@@ -68,9 +68,8 @@ cor(Y, Z) where Y is a standard normal variable. In other words, the association
 Fourth, the resulting matrix is checked for validity. If it is not a valid correlation matrix, a warning message is printed and the nearest valid matrix is returned instead. (\emph{nearPD} from \pkg{Matrix)}
 }
 \references{
-Amatya, A. & Demirtas, H. (2016) Simultaneous generation of multivariate mixed
-data with Poisson and normal marginals. Forthcoming in \emph{Journal of Statistical
-Computation and Simulation}.
+Amatya, A. & Demirtas, H. (2015) Simultaneous generation of multivariate mixed
+data with Poisson and normal marginals. \emph{Journal of Statistical Computation and Simulation} \bold{85:15}, 3129--3139.
 
 Demirtas, H. & Hedeker, D. (2011) A practical way for computing approximate
 lower and upper correlation bounds. \emph{American Statistician} \bold{65:2}, 104--109.
