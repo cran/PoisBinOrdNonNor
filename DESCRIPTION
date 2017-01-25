@@ -1,8 +1,8 @@
 Package: PoisBinOrdNonNor
 Type: Package
 Title: Generation of Up to Four Different Types of Variables
-Version: 1.1
-Date: 2016-05-25
+Version: 1.2
+Date: 2017-01-25
 Author: Hakan Demirtas, Rachel Nordgren, Rawan Allozi
 Maintainer: Rawan Allozi <ralloz2@uic.edu>
 Description: Generation of a chosen number of count, binary, ordinal, and continuous (via Fleishman polynomials) random variables, with specified correlations and marginal properties.
@@ -11,5 +11,5 @@ Depends: Matrix, corpcor, MASS, GenOrd, BB
 Suggests: moments
 NeedsCompilation: no
 Repository: CRAN
-Packaged: 2016-05-27 00:11:27 UTC; rawanallozi
-Date/Publication: 2016-05-27 10:45:10
+Packaged: 2017-01-25 18:27:19 UTC; rawanallozi
+Date/Publication: 2017-01-26 00:53:02
