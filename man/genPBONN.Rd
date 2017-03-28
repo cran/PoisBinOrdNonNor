@@ -61,18 +61,18 @@ Then for each variable, the appropriate transformation is applied to each column
 Amatya, A. & Demirtas, H. (2015) Simultaneous generation of multivariate mixed
 data with Poisson and normal marginals. \emph{Journal of Statistical Computation and Simulation} \bold{85:15}, 3129--3139.
 
-Demirtas, H. & Hedeker, D. (2011) A practical way for computing approximate
-lower and upper correlation bounds. \emph{American Statistician} \bold{65:2}, 104--109.
-
-Demirtas, H., Hedeker, D. & Mermelstein, R. J. (2012) Simulation of massive public
-health data by power polynomials. \emph{Statistics in Medicine} \bold{31:27}, 3337--3346.
-
 Demirtas, H. (2014). Joint generation of binary and nonnormal continuous data.
 \emph{Journal of Biometrics and Biostatistics} \bold{5:3:1000199}, 1--9.
 
+Demirtas, H. & Hedeker, D. (2011) A practical way for computing approximate
+lower and upper correlation bounds. \emph{American Statistician} \bold{65:2}, 104--109.
+
 Demirtas, H. & Hedeker, D. (2016). Computing the point-biserial correlation under
-any underlying continuous distribution. Forthcoming in \emph{Communications in Statistics--
-Simulation and Computation}.
+any underlying continuous distribution. \emph{Communications in Statistics --
+Simulation and Computation}, \bold{45:8}, 2744--2751. 
+
+Demirtas, H., Hedeker, D. & Mermelstein, R. J. (2012) Simulation of massive public
+health data by power polynomials. \emph{Statistics in Medicine} \bold{31:27}, 3337--3346.
 }
 \examples{
 \dontrun{
