@@ -18,17 +18,17 @@ Generation of a chosen number of count, binary, ordinal, and continuous (via Fle
 \tabular{ll}{
 Package: \tab PoisBinOrdNonNor\cr
 Type: \tab Package\cr
-Version: \tab 1.4\cr
-Date: \tab 2018-01-10\cr
+Version: \tab 1.5\cr
+Date: \tab 2019-02-28\cr
 License: \tab GPL-2 | GPL-3\cr
 }
-This package consists of five public functions.  The function \code{\link{check.params}} validates the input parameters to avoid obvious specification errors of the marginal parameters.  The function \code{\link{validate.cor.mat}} validates an input target correlation matrix to make sure that it is a legitimate correlation matrix, and then calls \code{\link{lower.upper.cors}} with the rest of the input parameters to generate approximate maximum and minimum feasible bounds, and then checks that each entry is within its bounds. The function \code{\link{find.cor.mat.star}} creates the intermediate correlation matrix.  Finally, given the output from \code{\link{find.cor.mat.star}} along with the other variable specifications, the function \code{\link{genPBONN}} generates the simultaneous random data, following the target correlation matrix and the marginal input parameters.
+This package consists of five public functions.  The function \code{\link{check.params}} validates the input parameters to avoid obvious specification errors of the marginal parameters. The function \cr \code{\link{validate.cor.mat}} validates an input target correlation matrix to make sure that it is a legitimate correlation matrix, and then calls \code{\link{lower.upper.cors}} with the rest of the input parameters to generate approximate maximum and minimum feasible bounds, and then checks that each entry is within its bounds. The function \code{\link{find.cor.mat.star}} creates the intermediate correlation matrix.  Finally, given the output from \code{\link{find.cor.mat.star}} along with the other variable specifications, the function \code{\link{genPBONN}} generates the simultaneous random data, following the target correlation matrix and the marginal input parameters.
 
 }
 \author{
-Hakan Demirtas, Rachel Nordgren, Rawan Allozi
+Hakan Demirtas, Rachel Nordgren, Rawan Allozi, Ran Gao
 
-Maintainer: Rawan Allozi <ralloz2@uic.edu>
+Maintainer: Ran Gao <rgao8@uic.edu>
 }
 \references{
 Amatya, A. & Demirtas, H. (2015) Simultaneous generation of multivariate mixed
