@@ -7,19 +7,14 @@ Generation of up to Four Different Types of Variables
 }
 \description{
 Simultaneous generation of a chosen number of count,
-binary, ordinal, and continuous random variables, with specified correlations and marginal
-distributions. Throughout the package, the word 'Poisson' is used to imply count data under the 
-assumption of Poisson distribution; and continuous variables can take any shape allowed by
-Fleishman polynomials.
-
-Generation of a chosen number of count, binary, ordinal, and continuous (via Fleishman polynomials) random variables, with specified correlations and marginal properties. The correlation matrix and the generated data follow the order of Poisson, binary, ordinal and continuous.
+binary, ordinal, and continuous (via Fleishman polynomials) random variables, with specified correlations and marginal distributions. Throughout the package, the word 'Poisson' is used to imply count data under the assumption of Poisson distribution; and continuous variables can take any shape allowed by Fleishman polynomials. The correlation matrix and the generated data follow the order of Poisson, binary, ordinal and continuous.
 }
 \details{
 \tabular{ll}{
 Package: \tab PoisBinOrdNonNor\cr
 Type: \tab Package\cr
-Version: \tab 1.5\cr
-Date: \tab 2019-02-28\cr
+Version: \tab 1.5.1\cr
+Date: \tab 2019-05-16\cr
 License: \tab GPL-2 | GPL-3\cr
 }
 This package consists of five public functions.  The function \code{\link{check.params}} validates the input parameters to avoid obvious specification errors of the marginal parameters. The function \cr \code{\link{validate.cor.mat}} validates an input target correlation matrix to make sure that it is a legitimate correlation matrix, and then calls \code{\link{lower.upper.cors}} with the rest of the input parameters to generate approximate maximum and minimum feasible bounds, and then checks that each entry is within its bounds. The function \code{\link{find.cor.mat.star}} creates the intermediate correlation matrix.  Finally, given the output from \code{\link{find.cor.mat.star}} along with the other variable specifications, the function \code{\link{genPBONN}} generates the simultaneous random data, following the target correlation matrix and the marginal input parameters.

@@ -5,9 +5,7 @@ Engine (generation) function for the PoisBinOrdNonNor package
 }
 \description{
 This function generates a chosen number of Poisson, binary, ordinal, and continuous (via Fleishman
-polynomials) random variables, with specified correlations and marginal properties.
-
-The correlation matrix and the generated data follow the order of Poisson, binary, ordinal and continuous.
+polynomials) random variables, with specified correlations and marginal properties. The correlation matrix and the generated data follow the order of Poisson, binary, ordinal and continuous.
 }
 \usage{
 genPBONN(n, cmat.star, no.pois = 0, no.bin = 0, no.ord = 0, 

@@ -5,10 +5,7 @@ Validates the target correlation matrix
 }
 \description{
 This function validates the user-inputted target correlation matrix for the chosen number of Poisson,
-binary, ordinal, and continuous (via Fleishman polynomials) random variables.
-
-
-The correlation matrix follows the order of Poisson, binary, ordinal, continuous.
+binary, ordinal, and continuous (via Fleishman polynomials) random variables. The correlation matrix follows the order of Poisson, binary, ordinal, continuous.
 }
 \usage{
 validate.cor.mat(cor.mat, no.pois = 0, no.bin = 0, no.ord = 0, 

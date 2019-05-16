@@ -6,10 +6,7 @@ Finds intermediate correlation matrix
 \description{
 This function calculates an intermediate correlation matrix for a chosen number of Poisson, binary,
 ordinal, and continuous (via Fleishman polynomials) random variables, with specified target
-correlations and marginal properties.
-
-
-The correlation matrix follows the order of Poisson, binary, ordinal, continuous.
+correlations and marginal properties. The correlation matrix follows the order of Poisson, binary, ordinal, continuous.
 }
 \usage{
 find.cor.mat.star(cor.mat, no.pois = 0, no.bin = 0, no.ord = 0, 
