@@ -1,7 +1,7 @@
-a81286ad6a00cd91945af51f0dcc4bac *DESCRIPTION
+bbf8c8acdc08616e77dab1e3e40e9a2a *DESCRIPTION
 d75f59eb2ddce902151a331c32e8f308 *NAMESPACE
 ba0be7703e2e9c7a0acd98dc450fb592 *R/projectF.R
-3a10a9654ea772e467dd4018e8cb3b8b *man/PoisBinOrdNonNor-package.Rd
+e606483f50e7f8dd34c000a5a5ff8153 *man/PoisBinOrdNonNor-package.Rd
 dd9f83496ff3464516141db1aa48df7e *man/check.params.Rd
 9e124905f025d477776615888a0f66a0 *man/find.cor.mat.star.Rd
 f2cfb4301ea6a0bb028d982f8a470fd7 *man/genPBONN.Rd
