@@ -55,10 +55,10 @@ check.params <- function(no.pois=0, no.ordbin=0, no.nonn=0, pois.list=list(), or
       stop("Dimension of the ordinal and/or binary list does not match \nthe number of ordinal and/or binary variables!\n")
     }
     if(no.ord > 0) {
-#Does not apply when list is cumulative
-#      if(!all(lapply(ord.list, sum)==1)) {
-#        stop("Ordinal rates must sum to 1!\n")
-#      }
+      #Does not apply when list is cumulative
+      #      if(!all(lapply(ord.list, sum)==1)) {
+      #        stop("Ordinal rates must sum to 1!\n")
+      #      }
       if(!all(unlist(lapply(ord.list, min) >= 0)) || !all(unlist(lapply(ord.list,max)<=1))) {
         stop("Ordinal probabilities must be between 0 and 1!\n")
       }
@@ -176,7 +176,7 @@ find.cor.mat.star <- function(cor.mat, no.pois=0, no.bin=0, no.ord=0, no.nonn=0,
       cor.mat.star[j,i] = cor.mat.star[i,j]
     }
   }
-
+  
   if(no.pois > 0 && no.bin+no.ord > 0) {
     po.combo = expand.grid(1:no.pois, 1:(no.bin+no.ord)+no.pois)
     for(k in 1:nrow(po.combo)) {
@@ -213,6 +213,7 @@ find.cor.mat.star <- function(cor.mat, no.pois=0, no.bin=0, no.ord=0, no.nonn=0,
   if(!is.positive.definite(cor.mat.star)) {
     cat("Warning! \nFinal correlation matrix had to be coerced to be positive definite!")
     cor.mat.star = nearPD(cor.mat.star, corr=TRUE)$mat
+    cor.mat.star = as.matrix(cor.mat.star)
   }
   return(cor.mat.star)
 }
@@ -257,11 +258,11 @@ find.cor.mat.star <- function(cor.mat, no.pois=0, no.bin=0, no.ord=0, no.nonn=0,
   r1 = rs[3]
   r2 = rs[4]
   ans=.BBsolveWrapper(r1, r2)
-    iters = 0
-    while(iters < maxIters && (ans$convergence != 0 || !.testC4(ans$par))) {
-      iters = iters + 1
-      ans = .BBsolveWrapper(r1,r2)
-    }
+  iters = 0
+  while(iters < maxIters && (ans$convergence != 0 || !.testC4(ans$par))) {
+    iters = iters + 1
+    ans = .BBsolveWrapper(r1,r2)
+  }
   return(c(ans$par,rmean,rvar))
 }
 
@@ -368,9 +369,9 @@ find.cor.mat.star <- function(cor.mat, no.pois=0, no.bin=0, no.ord=0, no.nonn=0,
   return(qpois(u, lambda))
 }
 
-.make.sym.matrix <-function(numVars, rhos) {
-  sigma = diag(numVars)
-  sigma[upper.tri(sigma)]=rhos
-  sigma[lower.tri(sigma)]=rhos
+.make.sym.matrix  = function(numVars, rhos) {
+  sigma = matrix(0, numVars, numVars)
+  sigma[upper.tri(sigma)] = rhos
+  sigma = t(sigma) + sigma + diag(1, numVars)
   return(sigma)
 }
